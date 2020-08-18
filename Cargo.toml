@@ -66,7 +66,7 @@ required-features = ["compress"]
 
 [dependencies]
 actix-codec = "0.2.0"
-actix-service = "1.0.2"
+actix-service = "1.0.6"
 actix-utils = "1.0.6"
 actix-router = "0.2.4"
 actix-rt = "1.1.1"
@@ -123,6 +123,10 @@ actix-web-codegen = { path = "actix-web-codegen" }
 actix-files = { path = "actix-files" }
 actix-multipart = { path = "actix-multipart" }
 awc = { path = "awc" }
+actix-utils = { git = "https://github.com/actix/actix-net", branch = "fix/framed" }
+actix-codec = { git = "https://github.com/actix/actix-net", branch = "fix/framed" }
+# actix-codec = { path = "../actix-net/actix-codec" }
+# actix-utils = { path = "../actix-net/actix-utils" }
 
 [[example]]
 name = "client"
